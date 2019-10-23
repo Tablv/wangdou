@@ -1,0 +1,145 @@
+@import "../../../assets/css/base.less";
+@import '../../../assets/css/redefine.less';
+// 信息提示
+.title-modal{
+  position: absolute;
+  .ivu-modal{
+    position: absolute;
+    width: 480px !important;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .ivu-modal-header{
+      border: none;
+      padding: 30px 0 0 30px;
+      svg.iconfont.guide{
+        font-size: 20px !important;
+        color: @warning;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+      }
+      span{
+        font-size: 16px;
+        color: #333333;
+        margin-left: 20px;
+      }
+    }
+    .ivu-modal-body{
+      font-size: 14px;
+      color: #333333;
+      opacity: 0.85;
+      padding: 20px 0 40px 50px
+    }
+    .ivu-modal-footer{
+      border: none;
+      padding:0 30px 30px 18px;
+      Button{
+        border-radius: 0;
+      }
+    }
+  }
+}
+.me_poptip{
+  width:0% !important;
+  position: absolute;
+  top: -20px;
+  right: -3px;
+  z-index: 200;
+  width: 0;
+  .top,.bottom{
+    text-align: center;
+  }
+  .center{
+    width: 300px;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+  .center-left{
+    float: left;
+  }
+  .center-right{
+    float: right;
+  }
+  .icon_help{
+    font-size: 16px;
+  }
+  .icon_help_nofocus{
+    color: #d7d7d7;
+  }
+  .icon_help_focus{
+    color: @warning ;
+  }
+}
+.querCompany {
+  .ivu-modal-content {
+    height: 502px !important;
+  }
+  .ivu-modal-body {
+    padding: 0px;
+  }
+  .ivu-modal-footer {
+    border-top: 0;
+    padding: 0;
+    text-align: right;
+    bottom: -20px;
+  }
+  .tableHeight {
+    height: 36px;
+  }
+  .company-input {
+      display: inline-block;
+    }
+  .ivu-input-search{
+      padding: 0 8px !important;
+      color: #999999 !important;
+      background: #FAFAFA !important;
+      border-color: #e5e5e5 !important;
+  }
+  .ivu-input-search:before{
+    background: none
+  }
+  .ivu-input-search-icon {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+  }
+  .span-space {
+    .span-space(8px, 0)
+  }
+  .doReset {
+    margin-left: 12px
+  }
+}
+.search-style {
+  position: absolute;
+  top: 8px;
+  right:2px;
+}
+.append-container {
+  // position: relative;
+  .company_alert{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    font-size: 14px;
+    .icon_warn{
+      font-size: 16px !important;
+    }
+  }
+  .success_color{
+    color: #00A497;
+    background-color: #E5F9F7;
+  }
+  .error_color{
+    color: #F92424;
+    background-color: #FFECEB;
+  }
+  .query-condition {
+    .ivu-icon-ios-close-circle {
+      right: 50px !important;
+    }
+  }
+}

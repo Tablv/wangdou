@@ -1,0 +1,124 @@
+@import '../../../../../assets/css/base.less';
+@import '../../../../../assets/css/redefine.less';
+@import '../../../../../assets/css/index.less';
+.account-body {
+  .ivu-modal-header {
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      .modal-header-name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .close-company-modal {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .ivu-modal-body {
+    .centent {
+      .ivu-row {
+        .page-left {
+          padding-top: 0 !important;
+          padding-left: 0 !important;
+          .tableHeight {
+            height: 36px;
+          }
+          .table-title {
+            font-weight: 800;
+            padding-bottom: 8px;
+            margin-top: 14px;
+          }
+          .page-left-search {
+            padding-top: 0 !important;
+          }
+          .ivu-input-search {
+            padding: 0 8px !important;
+            color: #999999 !important;
+            background: #fafafa !important;
+            border-color: #e5e5e5 !important;
+          }
+
+          .ivu-input-search:before {
+            background: none;
+          }
+
+          .clearList {
+            width: 100px;
+          }
+
+          .user-mobile {
+            width: 100%;
+            margin-bottom: 10px
+          }
+        }
+        .page-right {
+          padding-left: 16px !important;
+          padding-top: 0 !important;
+          .select-title {
+            display: inline-block;
+            font-weight: 800;
+          }
+          .col-div {
+            overflow: auto;
+            height: 348px;
+            border: 1px solid rgb(229, 229, 229);
+          }
+
+          .page-right-row {
+            height: 40px;
+            padding-bottom: 8px;
+          }
+        }
+      }
+      .div-page {
+        width: 54%;
+        padding-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        .div-page-lf {
+          flex: 1;
+          line-height: 32px;
+        }
+        .div-page-btn {
+          flex: 5;
+          text-align: right;
+          .pages {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          button {
+            margin-left: 5px;
+          }
+
+        }
+      }
+    }
+  }
+  .ivu-modal-footer {
+    .modal-footer-actions {
+      .button-space {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  .ivu-table-body {
+    height: 312px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .ivu-table td {
+    height:31px;
+  }
+  .ivu-table-tip {
+    height: 0;
+  }
+  .query-conditions {
+    .ivu-input-icon-clear {
+      right: 32px;
+      position: absolute;
+    }
+  }
+}

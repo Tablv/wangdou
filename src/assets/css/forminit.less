@@ -1,0 +1,44 @@
+.form_init{
+  .ivu-form-item-label{
+    color: #333;
+    &::before{
+      content: '';
+    }
+  }
+  .input_after{
+    .ivu-form-item-content{
+      &::after{
+        content: '*';
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: -15px;
+        margin-right: 4px;
+        line-height: 1;
+        font-family: SimSun;
+        font-size: 12px;
+        color: #ed4014;
+      }
+      .ivu-form-item-error-tip{
+        display: none;
+      }
+    }
+  }
+  .ivu-form-item{
+    margin-bottom: 8px;
+    .ivu-form-item-content{
+      .input_width{
+        .ivu-input{
+          max-width: 99.5%;
+          font-size: 12px;
+        }
+      }
+      .ivu-date-picker{
+        width: 100%;
+      }
+      .ivu-input,.ivu-select{
+        max-width: 300px;
+      }
+    }
+  }
+}

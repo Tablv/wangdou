@@ -1,0 +1,178 @@
+.upload-subject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  background: #ffffff;
+  z-index: 2;
+
+  .upload-subject-header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-indent: 16px;
+    color: #333333;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .upload-subject-title {
+    margin: 0 auto;
+    height: 50px;
+    border-bottom: 1px solid #E5E5E5;
+    width: 98%;
+    /*写给不支持calc()的浏览器*/
+    width: -moz-calc(100% - 32px);
+    width: -webkit-calc(100% - 32px);
+    width: calc(100% - 32px);
+    text-align: center;
+
+    .title-box {
+      width: 312px;
+      height: 50px;
+      margin: 0 auto;
+
+      .upload-subject-title-item {
+        float: left;
+        width: 156px;
+        height: 50px;
+        position: relative;
+
+        .item-no {
+          position: absolute;
+          top: 15px;
+          left: 34px;
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          background: #b1b1b1;
+          color: #ffffff;
+          line-height: 20px;
+          font-size: 14px;
+        }
+
+        .item-icon-upload {
+          position: absolute;
+          top: 19px;
+          left: 71px;
+          width: 16px;
+          height: 12px;
+          color: #999999;
+        }
+
+        .item-icon-verifical {
+          position: absolute;
+          top: 17px;
+          left: 71px;
+          width: 14px;
+          height: 16px;
+          color: #999999;
+        }
+
+        .item-icon-complete {
+          position: absolute;
+          top: 18px;
+          left: 71px;
+          width: 14px;
+          height: 14px;
+          color: #999999;
+        }
+
+        .item-font {
+          position: absolute;
+          top: 0;
+          left: 66px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 12px;
+          color: #999999;
+
+        }
+      }
+
+      .upload-subject-title-item-active {
+        float: left;
+        width: 156px;
+        height: 50px;
+        position: relative;
+
+        // color: #00a497;
+        // border-bottom: 1px solid #00a497;
+        .item-no {
+          position: absolute;
+          top: 15px;
+          left: 34px;
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          // background: @primary;
+          color: #ffffff;
+          line-height: 20px;
+          font-size: 14px;
+        }
+
+        .item-icon-upload {
+          position: absolute;
+          top: 19px;
+          left: 71px;
+          width: 16px;
+          height: 12px;
+          // color: #00a497;
+        }
+
+        .item-icon-verifical {
+          position: absolute;
+          top: 17px;
+          left: 71px;
+          width: 14px;
+          height: 16px;
+          // color: #00a497;
+        }
+
+        .item-icon-complete {
+          position: absolute;
+          top: 18px;
+          left: 71px;
+          width: 14px;
+          height: 14px;
+          // color: #00a497;
+        }
+
+        .item-font {
+          position: absolute;
+          top: 0;
+          left: 66px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 12px;
+          // color: #00a497;
+
+        }
+      }
+    }
+
+  }
+
+  .upload-subject-box {
+    width: 100%;
+    height: 403px;
+  }
+}
+
+.authUserModal {
+  .auth-modal {
+    position: absolute;
+    left: 8px;
+
+    .ivu-modal {
+      position: absolute;
+      top: 0;
+      width: 100% !important;
+
+      .ivu-modal-content {
+        border-radius: 0;
+      }
+    }
+  }
+}

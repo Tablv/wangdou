@@ -1,0 +1,390 @@
+@import '~iview/src/styles/index.less';
+
+// saas 变量
+@primary                : #00A497;
+@primary-light          : tint(@primary, 90%);
+@body-background        : #f1f1f1;
+@white                  : #ffffff;
+@white-light            : #f5f5f5;
+@default-font-color     : rgba(51,51,51,.85);
+@tabs-background        : #dadada;
+@tabs-color             : #4f4f4f;
+@border-color           : #e5e5e5;
+@btn-background         : #fafafa;
+@placeholder-color      : #c5c8ce;
+@layout-background      : #F0F0F0;
+
+// Color
+@primary-color          : @primary;
+@info-color             : #2db7f5;
+@success-color          : #19be6b;
+@processing-color       : @primary-color;
+@warning-color          : #fa790e;
+@error-color            : #ed4014;
+@normal-color           : #e6ebf1;
+@link-color             : @primary;
+@link-hover-color       : tint(@link-color, 20%);
+@link-active-color      : shade(@link-color, 5%);
+@selected-color         : fade(@primary-color, 90%);
+@tooltip-color          : #fff;
+@subsidiary-color       : #808695;
+@rate-star-color        : #f5a623;
+@iconfont-color         : #595959;
+@table-hover            : #ffefc2;
+
+// Base
+@title-color            : #17233d;
+@text-color             : @default-font-color;
+@border-radius-base     : 0;
+@border-radius-small    : 0;
+
+// Border color
+@border-color-base      : @border-color;  // outside
+
+// Background color
+@menu-dark-title              : #242A30;
+@menu-dark-active-bg          : #242A30;
+@menu-dark-subsidiary-color   : rgba(255,255,255,.7);
+@menu-dark-group-title-color  : rgba(255,255,255,.36);
+@table-thead-bg               : #f2f2f2;
+@table-td-hover-bg            : #ffefc2;
+@table-td-highlight-bg        : #ffefc2;
+@head-bg                      : @primary;
+
+// Layout
+@layout-header-background     : @primary;
+
+// Button
+@btn-font-weight        : normal;
+@btn-padding-base       : 5px 15px 6px;
+@btn-padding-large      : 6px 15px 6px 15px;
+@btn-padding-small      : 1px 7px 2px;
+@btn-padding-base-icon  : 5px 15px 6px;
+@btn-padding-large-icon : 6px 15px 6px 15px;
+@btn-padding-small-icon : 1px 7px 2px;
+@btn-font-size          : 12px;
+@btn-font-size-large    : 14px;
+@btn-border-radius      : 0;
+@btn-border-radius-small: 0;
+
+@btn-default-color      : @default-font-color;
+@btn-default-bg         : @btn-background;
+@btn-default-border     : @border-color;
+
+// 组件内大标题
+.page-header-name {
+  color: @default-font-color;
+}
+// iview下拉框
+.ivu-select:hover {
+  .ivu-select-arrow {
+    color: @primary;
+  }
+}
+// 筛选条件带搜索
+.ivu-input-wrapper:hover {
+  .ivu-input-search-icon {
+    border: 1px solid @primary;
+    color: @primary;
+  }
+}
+// 文字按钮
+.textBtn {
+  color: @primary;
+}
+// 文字，下划线
+.textBorder {
+  color: @primary;
+  border-bottom: 2px solid @primary;
+}
+// 盒子背景色
+.box-background {
+  background: @primary;
+}
+// table 操作标签span
+.table-span {
+  color: @primary;
+}
+//分配弹窗右侧div：hover效果
+  .selected-div:hover{
+    color: #ffffff;
+    background-color:@primary;
+    border-color: @primary;
+    .table-span {
+      color: #ffffff !important;
+    }
+  }
+// 岗位权限表-active颜色
+.activeAuth {
+  color: @primary;
+  border-left: 2px solid @primary;
+}
+// 表格列颜色(特定样式)
+.ivu-table td.primary{
+  color: @primary;
+}
+.style-router-link {
+  background-color: @primary;
+}
+// 二级标题样式
+.vertical-title {
+  &:after {
+    background-color: @primary;
+  }
+}
+// 页眉
+.page-header {
+  border-bottom: 1px solid @border-color;
+}
+// 内容主体
+.page-content {
+  .query-plan-rt {
+    color: @primary;
+  }
+  .add-condition {
+    border: 1px solid @border-color;
+    color: @placeholder-color;
+  }
+}
+// 列表分页
+.page-footer-lf {
+  strong {
+    color: @primary;
+  }
+}
+// 单选按钮的颜色
+.ivu-radio-checked {
+  &:hover{
+    .ivu-radio-inner {
+      border-color: @primary;
+    }
+  }
+  .ivu-radio-inner {
+    border-color: @primary;
+    &::after{
+      background-color: @primary;
+    }
+  }
+}
+// main
+.main{
+  .logo-con{
+    border-bottom: 1px solid @border-color;
+    .iconfont {
+      color: @primary;
+      opacity: .6;
+    }
+  }
+  .left-sider {
+    background: @white;
+    color: @default-font-color;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    opacity: .85;
+  }
+  .layout-container {
+    background: @layout-background;
+  }
+  .header-con{
+    color: @white;
+  }
+  .content-wrapper{
+    background: @layout-background;
+    .box-container{
+      background: @white;
+    }
+  }
+}
+
+// Welcome
+.welcome-loading {
+  border: 1px solid @primary;
+  .linear-background {
+    background: linear-gradient(to right,  transparent, rgba(22,242,227, .6)); /* 标准的语法（必须放在最后） */
+  }
+  .circle {
+    background: #16f2e3;
+  }
+}
+// tags-nav
+.tags-nav{
+  .btn-con{
+    &:hover button {
+      color: @primary;
+    }
+  }
+  .ivu-icon-ios-close {
+    color: @primary !important;
+  }
+  .scroll-outer {
+    .scroll-body {
+      .ivu-tag-primary {
+        background: @layout-background !important;
+      }
+    }
+  }
+  .ivu-tag-text {
+    color: @white;
+  }
+  .ivu-tag-color-white {
+    color: @primary !important;
+  }
+}
+.change-skin-box {
+  box-shadow: 0 0 6px @primary-light;
+}
+// side-menu
+.side-menu-wrapper{
+  a{
+    &:hover{
+      color: @primary;
+    }
+  }
+  a.drop-menu-a {
+    color: @default-font-color;
+    &:hover {
+      color: @default-font-color
+    }
+    .ivu-icon, .iconfont {
+      color: @iconfont-color !important;
+    }
+    &:hover {
+      background: tint(@primary, 90%);
+    }
+    &[active] {
+      background: @primary;
+      color: @white;
+      .ivu-icon, .iconfont {
+        color: @white !important;
+      }
+    }
+  }
+}
+.drop-menu-item {
+  .title {
+    color: @primary;
+  }
+  .menu-title, .skin-default {
+    border-bottom: 1px solid @primary;
+    color: @primary;
+  }
+  .menu-name {
+    color: @default-font-color;
+    &:hover {
+      color: @primary;
+    }
+  }
+}
+// sider-trigger
+.sider-trigger-a{
+  color: @iconfont-color;
+  border-top: 1px solid @border-color;
+}
+
+//ivu-btn-text
+.ivu-btn-text {
+  color: @primary;
+}
+// tabs选择按钮的颜色
+.ivu-tabs-nav {
+  .ivu-tabs-tab-active {
+    color: @primary;
+  }
+
+  .ivu-tabs-tab {
+    &:hover {
+      color: @primary;
+    }
+  }
+}
+ // 搜索条件button
+ .search-button {
+  //   &:hover {
+  //     .ivu-input-group-append {
+  //       border: 1px solid @primary;
+  //       border-left: none;
+  //       .ivu-icon {
+  //         color: @primary;
+  //       }
+  //     }
+  //     .ivu-input-group {
+  //       border: 1px solid @primary;
+  //     }
+  //  }
+   .ivu-input-group-append {
+     &:hover {
+       border: 1px solid @primary;
+       .ivu-icon {
+         color: @primary;
+       }
+     }
+     &:active {
+       border-color: @primary;
+       .ivu-icon {
+         color: @primary;
+       }
+     }
+   }
+ }
+ .ivu-form-item-error {
+   .no-error-modal {
+     .ivu-input {
+       border: 1px solid #e5e5e5;
+       &:focus {
+         border-color: @primary;
+         box-shadow: 0 0 0 2px rgba(0, 164, 151, 0.2);
+       }
+       &:hover {
+         border-color: @primary;
+       }
+     }
+     .ivu-input-icon {
+       color: #808695;
+     }
+     .ivu-input-group-append {
+       border: 1px solid #e5e5e5;
+       &:hover {
+         border: 1px solid @primary  !important;
+       }
+     }
+     .ivu-select-arrow {
+       color: #808695;
+       &:hover {
+         color: @primary;
+       }
+     }
+     .ivu-select-selection {
+       border: 1px solid #e5e5e5;
+       &:hover {
+         border: 1px solid @primary  !important;
+       }
+       &:focus {
+         border: 1px solid @primary  !important;
+         box-shadow: 0 0 0 2px rgba(0, 164, 151, 0.2);
+       }
+     }
+   }
+ }
+.ivu-tabs-ink-bar {
+  background-color: @primary;
+}
+
+.ivu-tabs-nav-prev {
+  .ivu-icon-ios-arrow-back {
+    &:hover {
+      background: @primary;
+    }
+  }
+}
+
+.ivu-tabs-nav-next {
+  .ivu-icon-ios-arrow-forward {
+    &:hover {
+      background: @primary;
+    }
+  }
+}
+// vxe-table表格样式重定义
+.vxe-checkbox>input:checked+.vxe-checkbox--icon, .vxe-checkbox.is--indeterminate>input:not(:checked)+.vxe-checkbox--icon {
+  background-color: @primary;
+  border-color: @primary;
+}

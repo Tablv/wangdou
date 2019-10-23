@@ -1,0 +1,190 @@
+.authUserModal {
+  .auth-modal {
+    position: absolute;
+    left: 8px;
+    .ivu-modal {
+      position: absolute;
+      top: 0;
+      width: 100% !important;
+      .ivu-modal-content {
+        border-radius: 0;
+        .ivu-modal-header{
+          padding: 9px 16px;
+        }
+      }
+    }
+  }
+  //头部
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .modal-header-name {
+      line-height: 22px;
+      opacity: 0.85;
+      font-family: PingFangSC-Medium;
+      font-size: 16px;
+      color: #333333;
+      letter-spacing: 0;
+    }
+    .modal-header-actions {
+      text-align: right;
+      .add{
+        margin-right: 5px;
+      }
+    }
+  }
+  //主体
+  //公司信息
+  .modal-company-info {
+    line-height: 59px;
+    background: #f9f9f9;
+    border: 1px solid #dddddd;
+    margin-bottom: 16px;
+    .style1 {
+      opacity: 0.85;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #333333;
+      letter-spacing: 0;
+      text-align: right;
+      margin: 0 16px;
+    }
+    .style2 {
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #999999;
+      letter-spacing: 0;
+    }
+  }
+  .company{
+    margin-bottom: 30px;
+  }
+  .auth-user{
+    .ivu-table-cell{
+      margin: 15px 0;
+      .ivu-checkbox-wrapper{
+        width: 160px;
+        margin-bottom: 3px;
+      }
+    }
+    .my_poptip{
+      z-index: 200;
+      width: 0;
+      .icon_help{
+        font-size: 8px;
+        position: absolute;
+        right: 0;
+        top: -10px;
+        color: #333333;
+      }
+      .icon_help:hover{
+        color: @warning;
+      }
+    }
+  }
+  .tableHeight {
+    height: 48px;
+  }
+  // 提示弹窗
+  .title-modal{
+    position: absolute;
+    .ivu-modal{
+      position: absolute;
+      width: 480px !important;
+      height: 200px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin:auto;
+      .ivu-modal-header{
+        border: none;
+        padding: 30px 0 0 30px;
+        svg.iconfont.guide{
+          font-size: 20px !important;
+          color: @warning;
+          position: absolute;
+          top: 30px;
+          left: 25px;
+        }
+        span{
+          font-size: 16px;
+          color: #333333;
+          margin-left: 20px;
+        }
+      }
+      .ivu-modal-body{
+        font-size: 14px;
+        color: #333333;
+        opacity: 0.85;
+        padding: 20px 0 40px 50px
+      }
+      .ivu-modal-footer{
+        border: none;
+        padding:0 30px 30px 18px;
+        Button{
+          border-radius: 0;
+        }
+      }
+    }
+  }
+  // CheckBox宽度
+  .check-box{
+    width: 144px !important;
+  }
+  // 设置核算主体弹窗
+  .show-scope-modal {
+    .modal-header-name {
+      font-weight: 700;
+    }
+    .centent {
+      height: 380px;
+    }
+    .modal-centent {
+      display: flex;
+      justify-content: space-between;
+      .centent-lt {
+        flex: 1;
+      }
+      .centent-rt {
+        padding-left: 80px;
+        flex: 1;
+      }
+    }
+    .table-centent {
+      display: flex;
+      justify-content: space-between;
+      .table-ct-btn {
+        display: block;
+      }
+      .btn-bot {
+        margin-top: 10px;
+      }
+      .table-ct {
+        padding-top: 130px;
+      }
+    }
+    .tableHeight {
+      height: 36px;
+    }
+    .ivu-row {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+    .ivu-input-search-icon {
+      background-color: #fafafa;
+      border: 1px solid #e5e5e5;
+    }
+    .ivu-input-wrapper{
+      width: 200px !important;
+    }
+  }
+  .table-scope {
+    display: flex;
+    justify-content: space-between;
+    .table-scope-icon {
+      text-align: right;
+    }
+  }
+}

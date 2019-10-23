@@ -1,0 +1,125 @@
+.main{
+  overflow: hidden;
+  .logo-con{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .ivu-menu-dark {
+    overflow-y: auto;
+    height: ~"calc(100vh - 120px)";
+  }
+  .ivu-layout-header {
+    height: 72px;
+    line-height: 72px;
+  }
+  .layout-container {
+    padding: 8px;
+    overflow: hidden;
+  }
+  .header-con{
+    padding: 0 20px;
+    width: 100%;
+    .root-enterprise-name {
+      position: relative;
+      padding: 0 24px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 17px;
+        right: 0;
+        height: 12px;
+        border-right: 1px solid #fff;
+      }
+    }
+    .header-icon-set{
+      margin-left: 6px;
+      cursor: pointer;
+    }
+    .header-icon-notice {
+      position: relative;
+      padding-left: 24px;
+      margin-left: 24px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 17px;
+        left: 0;
+        height: 12px;
+        border-left: 1px solid #fff;
+      }
+      .ivu-icon-md-notifications {
+        margin-right: 16px;
+      }
+    }
+    .header-logo {
+      flex: 0 0 156px;
+      font-size: 24px;
+      cursor: pointer;
+      img {
+        width: 36px;
+        margin-top: 18px;
+        margin-right: 16px;
+      }
+    }
+  }
+  .main-layout-con{
+    height: 100%;
+    overflow: hidden;
+  }
+  .main-content-con{
+    // 在浏览器检查元素的时候总会显示width:40%,所以改写~
+    height: 100%;
+    overflow: hidden;
+  }
+  .content-wrapper{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 8px;
+    .box-container{
+      box-sizing: border-box;
+      height: 100%;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      overflow: auto;
+    }
+  }
+}
+.ivu-menu-item > i{
+  margin-right: 2px !important;
+}
+.collased-menu-dropdown{
+  width: 100%;
+  margin: 0;
+  line-height: normal;
+  padding: 7px 0 6px 16px;
+  clear: both;
+  font-size: 12px !important;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  &:hover{
+    background: rgba(100, 100, 100, 0.1);
+  }
+  & * {
+    color: #515a6e;
+  }
+  .ivu-menu-item > i{
+    margin-right: 12px !important;
+  }
+  .ivu-menu-submenu > .ivu-menu > .ivu-menu-item > i {
+    margin-right: 8px !important;
+  }
+}
+
+.ivu-select-dropdown.ivu-dropdown-transfer {
+  max-height: 400px;
+}
+
+.ivu-back-top i {
+  padding: 2px 4px !important;
+}

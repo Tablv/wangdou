@@ -1,0 +1,472 @@
+// 公共样式
+@warning                : #fa790e;
+// 下拉组件定宽度
+.select-width {
+  width: 120px;
+}
+// 禁用后的字体颜色
+.ivu-input{
+  &:disabled {
+    color: rgba(51, 51, 51, 0.80) !important;
+  }
+}
+// 超出部分省略号显示
+.textOverflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+// 间距
+.span-space(@space-lf, @space-rt) {
+  margin-left: @space-lf;
+  margin-right: @space-rt;
+}
+// 文字按钮
+.textBtn(@padding-tb, @padding-lr) {
+  display: inline-block;
+  padding: @padding-tb @padding-lr;
+}
+// table 操作标签span
+.table-span {
+  margin-right: 5px;
+  cursor: pointer;
+}
+// 操作专用
+.table-right {
+  margin-right: 24px;
+}
+// 分配弹窗右侧小div
+.selected-div{
+  height: 30px;
+  border-radius: 15px;
+  background: #ECECEC;
+  border: 1px solid #C1C1C1;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 10px;
+  margin: 7px;
+}
+// 岗位权限表-active样式
+.activeAuth {
+  padding-left: 15px !important;
+  cursor: pointer;
+}
+// link btn
+.style-router-link {
+  vertical-align: middle;
+  color: #ffffff;
+}
+.drop-menu-item {
+  // min-width: 120px;
+  padding-right: 48px;
+  margin: 0;
+  &:last-child {
+    padding-right: 0;
+  }
+}
+// 二级标题样式
+.vertical-title {
+  color: #333;
+  font-size: 14px;
+  position: relative;
+  margin: 10px 0 20px 10px;
+  &:after{
+    content: '';
+    width: 2px;
+    height: 18px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.page-header-name {
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 800;
+}
+// 页眉
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 50px;
+  .page-header-actions {
+    text-align: right;
+    button {
+      margin-left: 8px;
+      position: relative;
+      z-index: 9;
+    }
+  }
+}
+// 内容主体
+.page-content {
+  padding: 16px;
+  // 查询方案
+  .query-plan {
+    display: flex;
+    justify-content: space-between;
+    button {
+      margin-left: 10px;
+    }
+  }
+  .query-condition {
+    display: flex;
+    .query-condition-lf {
+      flex: 1;
+      display: flex;
+      .title {
+        flex: 0 0 48px;
+        padding-top: 10px;
+        line-height: 30px;
+      }
+      .screen {
+        flex: 1;
+        .ivu-col {
+          padding-left: 10px;
+          padding-top: 10px;
+        }
+        button {
+          margin-right: 10px;
+        }
+        .add-condition {
+          position: relative;
+          cursor: pointer;
+          height: 32px;
+          line-height: 30px;
+          padding-left: 8px;
+          padding-right: 24px;
+        }
+      }
+    }
+    .query-condition-rt {
+      flex: 1;
+      align-self: flex-end;
+      line-height: 32px;
+      button {
+        margin-left: 8px;
+      }
+    }
+  }
+  .page-content-table {
+    margin-top: 10px;
+    padding-bottom: 80px;
+  }
+}
+.query-left {
+  text-align: left;
+}
+.query-right {
+  text-align: right;
+}
+// 过渡动画
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+// 列表分页
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 24px;
+  left: 24px;
+  bottom: 8px;
+  z-index: 99;
+  .page-footer-lf {
+    flex: 1;
+    align-self: flex-end;
+    margin-bottom: 4px;
+  }
+  .page-footer-rt {
+    flex: 2;
+    text-align: right;
+    .pages {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    button {
+      margin-left: 5px;
+    }
+  }
+}
+// table的高度
+.page-content .page-content-table {
+  padding-bottom: 8px;
+}
+// 王俊鹏的新增岗位的全局代码
+.create-auth-modal .create-auth-table {
+  margin-top: 10px
+}
+.create-auth-modal .ivu-modal-footer {
+  border-top: 0;
+  padding: 12px 18px 18px 18px;
+}
+.create-auth-highModal .ivu-modal-mask{
+  background-color:rgba(0, 0, 0, 0);
+  ;
+}
+.create-auth-highModal .ivu-modal{
+  top:278px;
+  width: 560px !important;
+  .auth-highModal-content{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    align-items: center;
+  }
+  .backPre{
+    position: absolute;
+    bottom:12px;
+    left: 15px;
+  }
+  .setIcon-yellow {
+    color: #FFA552;
+    font-size: 14px !important;
+  }
+
+  .setIcon-gray {
+    color: #ccc;
+    font-size: 14px !important;
+  }
+  .ivu-checkbox {
+    margin-right: 4px !important;
+  }
+  .ivu-checkbox-wrapper {
+    margin-right: 4px;
+  }
+}
+.yishixiao{
+  height: 82px;
+  width: 82px;
+  position: absolute;
+  top:15px;
+  left:140px;
+  z-index:999
+}
+.isfenye {
+  position: relative;
+    width: 45px;
+    height: 32px;
+    overflow: hidden;
+}
+.dofenye {
+  position: absolute;
+  top: -6px;
+  left: 3px
+}
+.fenye {
+  width: 39px;
+  height: 42px;
+}
+// tab切换的样式
+.ivu-tabs-content {
+  padding-top: 3px;
+}
+// 搜索条件button
+.search-button {
+  // 输入框清空icon
+  .ivu-input-icon-clear {
+    right: 35px;
+    position: absolute;
+  }
+  // 输入框包裹按钮
+  .ivu-input-group-append {
+    .ivu-btn-icon-only {
+      padding: 1px 8px;
+      margin-right: -8px !important;
+      &:hover {
+        border: 1px solid transparent;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+.ivu-tabs-nav .ivu-tabs-tab {
+  padding: 13px 30px;
+}
+// 弹框内的搜索input框
+.search-icon-button {
+  max-width: 32px;
+  padding: 0 8px !important;
+  height: 32px;
+  border-left: none !important;
+}
+// 弹框内的重置按钮
+.reset-button {
+  position: relative;
+  margin-left: -4px;
+}
+.search-input-margin {
+  margin-top: 8px;
+}
+// 筛选条件必填标识
+.require-stars {
+  &::after{
+    content: '*' !important;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: -4px;
+    margin-right: 4px;
+    line-height: 1;
+    font-family: SimSun;
+    font-size: 12px !important;
+    color: #ed4014;
+    visibility: visible !important;
+  }
+}
+// 表头必填标识
+.table-require-stars {
+  display: inline-block;
+  position: relative;
+  &::after{
+    content: '*' !important;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: -12px;
+    margin-right: 4px;
+    line-height: 1;
+    font-family: SimSun;
+    font-size: 12px !important;
+    color: #ed4014;
+    visibility: visible !important;
+  }
+}
+// 行操作表格里单元格的padding去除
+.page-table {
+  .ivu-tooltip, .ivu-tooltip-rel {
+    display: block;
+  }
+  .input-container {
+    .ivu-input {
+      border-color: #ffffff;
+    }
+  }
+  .readonly {
+    display: block;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .iconfont {
+      vertical-align: middle;
+    }
+  }
+  .readonly-nomal {
+    padding: 0 8px;
+  }
+}
+.quick-inside-modal {
+  td .ivu-table-cell {
+    padding: 0;
+  }
+  th .ivu-table-cell {
+    padding: 0 8px !important;
+  }
+}
+.quick-assist-modal {
+  td .ivu-table-cell {
+    padding: 0;
+  }
+  th .ivu-table-cell {
+    padding: 0 8px !important;
+  }
+}
+.cashflow-modal {
+  td .ivu-table-cell {
+    padding: 0;
+  }
+  th .ivu-table-cell {
+    padding: 0 8px !important;
+  }
+}
+.search-input-margin {
+  margin-top: 8px;
+}
+// 辅助核算角标input框
+.corner-box {
+  position: relative;
+  .corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .corner-input {
+    .ivu-input {
+      padding-right: 35px;
+      border-color: #ffffff;
+    }
+  }
+  .select-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #999;
+  }
+}
+.drop-menu-item {
+  min-width: 120px;
+  margin: 0;
+}
+// table表格 解决多选复选框出现省略号
+.ivu-table-row td:nth-child(1) .ivu-table-cell {
+  padding: 0 8px;
+}
+ thead tr th:nth-child(1) .ivu-table-cell {
+  padding: 0 8px;
+}
+.ivu-checkbox-wrapper {
+  margin-right: 0px;
+}
+// 通用iview confirm弹框，取消确认按钮调换，确认取消
+.ivu-modal-confirm-footer {
+  .ivu-btn-text {
+    float: right;
+    margin-left: 8px;
+    color:rgba(51,51,51,.85);
+    border: 1px solid #E5E5E5;
+    &:hover {
+      border: 1px solid #E5E5E5;
+      color:rgba(51,51,51,.85);
+    }
+  }
+}
+.ivu-layout-has-sider {
+  height: 100% !important;
+}
+// 表格内数据状态公共class
+
+.is-enable {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.is-enable-box {
+  vertical-align: middle;
+  &[useable] {
+    color: #595959;
+    .is-enable {
+      background-color: #595959;
+    }
+  }
+  &[disabled] {
+    color: #F73E3E;
+    .is-enable {
+      background-color: #F73E3E;
+    }
+  }
+}

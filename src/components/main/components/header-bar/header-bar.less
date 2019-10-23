@@ -1,0 +1,47 @@
+.header-bar{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  .header-bar-container {
+    flex: 1;
+    .user{
+      &-avator-dropdown{
+        // cursor: pointer;
+        margin-left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        height: 42px;
+        .username {
+          cursor: pointer;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: 220px;
+        }
+      }
+    }
+  }
+  .header-tags-nav {
+    width: 100%;
+    line-height: 1.5;
+  }
+  .tag-nav-wrapper{
+    width: 100%;
+    padding: 0;
+    height: 30px;
+  }
+  .custom-content-con{
+    text-align: right;
+    height: 42px;
+    line-height: 42px;
+    .ivu-badge-dot{
+      top: 8px;
+      right: 8px;
+    }
+    & > *{
+      float: right;
+    }
+  }
+}

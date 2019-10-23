@@ -1,0 +1,22 @@
+.trans{
+  transition: transform .2s ease;
+}
+@size: 37px;
+.sider-trigger-a{
+  position: absolute;
+  bottom: 0;
+  padding: 6px;
+  width: 100%;
+  height: @size;
+  display: block;
+  text-align: center;
+  z-index: 999;
+  svg, i{
+    .trans;
+    vertical-align: top;
+  }
+  &.collapsed svg, &.collapsed i{
+    transform: rotateZ(180deg);
+    .trans;
+  }
+}
